@@ -4,10 +4,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+host = os.getenv("PG_HOST")
+PG_USER = os.getenv("PG_USER")
+PG_PASS = os.getenv("PG_PASS")
 
 admins = [
-    os.getenv("ADMIN_ID"),
+    74876741,
 ]
 
 ip = os.getenv("ip")
